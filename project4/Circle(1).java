@@ -85,7 +85,7 @@ public class Circle  extends TwoDimensionalShape{
         out.print("\n Center = " + this.center.getX() + " " + this.center.getY()+ "\r\n");
         out.write("\n Area = " + this.getArea()+ "\r\n");;
         out.write("\n Perimeter = " + this.getPerimeter()+ "\r\n");
-        out.write("\n Radius = " + this.getRadius()+ "\r\n");;
+        out.write("\n Radious = " + this.getRadius()+ "\r\n");;
         out.write("\n\n\n");
     }
 
