@@ -33,16 +33,27 @@ Para ello una vez en la consola de comandos, debemos ejecutar los siguientes com
  `Figuras\src\main\java\rafaelmartinez\proyectogithub`
 
 `c:\Directorio programa\Javac Shape.java`
+
 `c:\Directorio programa\Javac TwoDimensionalShape.java`
+
 `c:\Directorio programa\Javac ThreeDimensionalShape.java`
+
 `c:\Directorio programa\Javac Point.java`
+
 `c:\Directorio programa\Javac circle.java`
+
 `c:\Directorio programa\Javac rectangle.java`
+
 `c:\Directorio programa\Javac triangle.java`
+
 `c:\Directorio programa\Javac Sphere.java`
+
 `c:\Directorio programa\Javac Cone.java`
+
 `c:\Directorio programa\Javac Cylinder.java`
+
 `c:\Directorio programa\Javac Cube.java`
+
 `c:\Directorio programa\Javac PrincipalApp.java`
 
 Una vez que tenemos los archivos compilados, tendrán el mismo nombre que los anteriores pero la extensión cambiaran por .class.
