@@ -12,7 +12,7 @@ El proyecto ha sido desarrollado en lenguaje JAVA con el entorno de desarrollo N
  Para ello debemos ingresar la dirección de GitHub. Una vez dentro de la página del proyecto solo tenemos que descargarnos el paquete con el proyecto. Esto se hace en la sección Code, dentro del menú que se despliega seleccionamos Download y guardamos el archivo zip.
 
 <p align ="center">
- <image src="Images/Download.png"></image>
+ <image src="Images/IconoJavaNetbeans.png"></image>
  </p>
 
 
