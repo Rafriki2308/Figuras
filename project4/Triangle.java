@@ -105,7 +105,7 @@ class Triangle extends TwoDimensionalShape {
     public void print(PrintWriter out) 
     {
         super.print(out);
-        out.write("\n Triangle Data => "+ "\r\n");
+        out.write("\n Traiangle Data => "+ "\r\n");
         out.write("\n Point 1 = " + this.point1.getX() + " , " + this.point1.getY()+ "\r\n");
         out.write("\n Point 2 = " + this.point2.getX() + " , " + this.point2.getY()+ "\r\n");
         out.write("\n Point 3 = " + this.point3.getX() + " , " + this.point3.getY()+ "\r\n");
