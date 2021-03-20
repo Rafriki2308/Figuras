@@ -4,21 +4,21 @@ import java.io.PrintWriter;
 
 /**
  * Clase que construye la figura geométrica circulo. Contiene todo lo necesario
- * para construir y ubicar un circulo en el espacio euclideo de dos dimensiones.
+ * para construir y ubicar un circulo en el espacio euclídeo de dos dimensiones.
  *
- * @author Rafel Martinez
+ * @author Rafel Martínez
  */
 public class Circle extends TwoDimensionalShape {
 
-    // Declaracion de atributos privados radio y centro, tipo double 
+    // Declaración de atributos privados radio y centro, tipo double 
     //y tipo Point
     private double radius;
     private Point center;
 
     /**
      * Constructor completo, que generará el circulo y lo posiciona en el
-     * espacio euclideo. Como datos toma el espacio euclideo como un objeto tipo
-     * Point, que seran coordenadas y un double que marcará el radio.
+     * espacio euclídeo. Como valores toma el espacio euclídeo como un objeto
+     * tipo Point, que seran coordenadas y un double que marcará el radio.
      *
      * @param center Objeto tipo Point con la posicion del círculo.
      * @param radius Valor tipo double correspondiente al radio del círculo.
@@ -60,7 +60,7 @@ public class Circle extends TwoDimensionalShape {
     }
 
     /**
-     * Método público que devuelve la posicion en el espacion euclideo del
+     * Método público que devuelve la posicion en el espacion euclídeo del
      * círculo.
      *
      * @return Valor tipo Point que corresponde con las coordenadas del círculo.

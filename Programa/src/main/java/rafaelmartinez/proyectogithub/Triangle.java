@@ -7,21 +7,18 @@ import java.io.PrintWriter;
  *Clase que construye la figura geométrica triángulo. Contiene todo lo 
  *necesario para construir dicho triángulo.
  * 
- * @author Rafel Martinez
+ * @author Rafel Martínez
  */
-class Triangle extends TwoDimensionalShape {
+public class Triangle extends TwoDimensionalShape {
 
-    //Declaracion de los puntos del triángulo que son de tipo Point.
+    //Declaración de los puntos del triángulo que son de tipo Point.
     private Point point1, point2, point3;
 
-    public Triangle() {
-    }
-
-    
+     
     /**
      * * Constructor completo, que generará un triángulo. Como datos toma 
      * tres valores que serán de tipo Point, y se corresponderán tres puntos,
-     * localizados en el espacio euclideo, que definiran el triángulo.
+     * localizados en el espacio euclídeo, que definiran el triángulo.
      * @param pt1 Dato tipo Point que define la posicion de un vértice.
      * @param py2 Dato tipo Point que define la posicion de un vértice.
      * @param py3 Dato tipo Point que define la posicion de un vértice.
@@ -52,7 +49,7 @@ class Triangle extends TwoDimensionalShape {
     
     /**
      * Método público que devuelve un valor tipo Point que se corresponde 
-     * con la ubicacion en el espacio euclideo de uno de los vértices del 
+     * con la ubicación en el espacio euclídeo de uno de los vértices del 
      * triángulo.
      * @return Valor tipo Point corresponde al atributo point1.
      */
@@ -63,7 +60,7 @@ class Triangle extends TwoDimensionalShape {
 
     /**
      * Método público que toma un valor tipo Point, que se corresponde 
-     * con la ubicacion en el espacio euclideo de uno de los vértices del 
+     * con la ubicación en el espacio euclídeo de uno de los vértices del 
      * triángulo, y asigna dicho valor al atributo point1.
      * @param point1 Valor tipo Point que se asigna a point1.
      */
@@ -75,7 +72,7 @@ class Triangle extends TwoDimensionalShape {
     
     /**
      * Método público que devuelve un valor tipo Point que se corresponde 
-     * con la ubicacion en el espacio euclideo de uno de los vértices del 
+     * con la ubicación en el espacio euclídeo de uno de los vértices del 
      * triángulo.
      * @return Valor tipo Point corresponde al atributo point2.
      */
@@ -87,9 +84,9 @@ class Triangle extends TwoDimensionalShape {
     
     /**
      * Método público que toma un valor tipo Point, que se corresponde 
-     * con la ubicacion en el espacio euclideo de uno de los vértices del 
+     * con la ubicación en el espacio euclídeo de uno de los vértices del 
      * triángulo, y asigna dicho valor al atributo point1.
-     * @param point1 Valor tipo Point que se asigna a point2.
+     * @param point2 Valor tipo Point que se asigna a point2.
      */
     public void setPoint2(Point point2) 
     {
@@ -100,7 +97,7 @@ class Triangle extends TwoDimensionalShape {
     
     /**
      * Método público que devuelve un valor tipo Point que se corresponde 
-     * con la ubicacion en el espacio euclideo de uno de los vértices del 
+     * con la ubicación en el espacio euclideo de uno de los vértices del 
      * triángulo.
      * @return Valor tipo Point corresponde al atributo point3.
      */
@@ -111,9 +108,9 @@ class Triangle extends TwoDimensionalShape {
 
     /**
      * Método público que toma un valor tipo Point, que se corresponde 
-     * con la ubicacion en el espacio euclideo de uno de los vértices del 
+     * con la ubicación en el espacio euclídeo de uno de los vértices del 
      * triángulo, y asigna dicho valor al atributo point1.
-     * @param point1 Valor tipo Point que se asigna a point3.
+     * @param point3 Valor tipo Point que se asigna a point3.
      */
     public void setPoint3(Point point3) 
     {
@@ -166,7 +163,7 @@ class Triangle extends TwoDimensionalShape {
     /**
      * Método público implementado de la clase TwoDimensionalShape. Este método
      * calcula y devuelve el valor del perímetro del tríangulo, para ello
-     * utiliza el metodo getX y getY, del método Point, que obtine la longitud
+     * utiliza el método getX y getY, del método Point, que obtine la longitud
      * de la linea entre esos puntos.
      *
      * @return Valor tipo double que se corresponde con el perímetro del

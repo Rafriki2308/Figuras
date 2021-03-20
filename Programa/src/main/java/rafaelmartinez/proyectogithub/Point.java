@@ -8,106 +8,115 @@ package rafaelmartinez.proyectogithub;
 import java.io.PrintWriter;
 
 /**
+ * Clase que se encarga de definir puntos y gestionarlos en el espacio euclídeo
+ * en dos dimensiones.
  *
- * @author Rafael Martinez
+ * @author Rafael Martínez
  */
-class Point 
-{
-    // Instance Variables x and y representing coordinates which are double.
-    private double x ;
+public class Point {
+
+    //Declaración de variables privadas de tipo double que representan las 
+    //coordenadas.
+    private double x;
     private double y;
 
     /**
-     * The default constructor which sets the x and the y coordinates. 
+     * Constructor público por defecto que define el punto de referencia en el
+     * espacio euclídeo de dos dimensiones.
      */
-    public Point() 
-    {
+    public Point() {
         this.x = 0.0;
-        this.y = 0.0 ;
+        this.y = 0.0;
     }
 
-    
     /**
-     * This is a constructor which takes two doubles and initializes x and the y.
+     * Constructor completo que toma dos valores tipo double y que definen un
+     * punto en el espacio euclídeo de dos dimensiones.
+     *
+     * @param x Valor tipo double que corresponderá a un punto de la coordenada
+     * @param y Valor tipo double que corresponderá a un punto de la coordenada
      */
-    public Point(double x, double y) 
-    {
+    public Point(double x, double y) {
         this.x = x;
         this.y = y;
     }
-    
-    
-     /**
-     * This constructor takes a Point object as parameter.
-     * It creates a new Point object.
+
+    /**
+     * Constructor que toma un objeto tipo Point y define otro punto en el
+     * espacio euclídeo en la misma posición.
+     *
+     * @param pnt Valor tipo Point que de cuyos atributos utilizará el
+     * constructor para definir un punto nuevo.
      */
-    public Point(Point pnt)
-    {
+    public Point(Point pnt) {
         this.x = pnt.x;
         this.y = pnt.y;
     }
-    
-   
-     /**
-     * It gets a value of x. 
-     * @return the value of y.
+
+    /**
+     * Método público que devuelve la coordenada X del punto en el espacio
+     * euclídeo.
+     *
+     * @return Valor double que corresponde al atributo x, que es privado.
      */
-    public double getX() 
-    {
+    public double getX() {
         return x;
     }
-    
-    
-     /**
-     * Sets a value of x.
+
+    /**
+     * Método público que modifica el valor de la coordenada X que define el
+     * punto en el espacio euclídeo de dos dimensiones.
+     *
+     * @param x Valor double que corresponderá al valor del atributo x.
      */
-    public void setX(double x) 
-    {
+    public void setX(double x) {
         this.x = x;
     }
-    
-    
+
     /**
-     * It gets a value of y. 
-     * @return the value of y.
+     * Método público que devuelve la coordenada y del punto en el espacio
+     * euclídeo.
+     *
+     * @return Valor double que corresponde con el atributo y.
+     *
      */
-    public double getY() 
-    {
+    public double getY() {
         return y;
     }
-    
-    
-     /**
-     * Sets a value of y.
+
+    /**
+     * Método público que modifica el valor de la coordenada y que define el
+     * punto en el espacio euclídeo de dos dimensiones.
+     *
+     * @param y Valor double que corresponderá al valor del atributo y.
      */
-    public void setY(double y) 
-    {
+    public void setY(double y) {
         this.y = y;
     }
-    
-    
+
     /**
-     * This is a distance method which returns the distance between this Point and another point.
-     * it takes point object as its parameter.
-     * through the parameter it calculate the length of line.
+     * Método público que calcula la distancia entre el objeto punto creado y
+     * otro objeto punto que le facilitamos al metodo.
+     *
+     * @param p Objeto tipo punto del que queremos obtener la distancia
+     * @return Valor tipo double que se corresponde con la distancia deseada.
      */
-    public double  distance(Point p)
-    {
-        return Math.sqrt( ((this.x - p.x)  * (this.x - p.x))  + ((this.y - p.y)  * (this.y - p.y)));
-  
+    public double distance(Point p) {
+        return Math.sqrt(((this.x - p.x) * (this.x - p.x)) + ((this.y - p.y) * (this.y - p.y)));
+
     }
-    
-    
+
     /**
-     * This is PrintWriter out method whic prints the point in the x and the y to output file.
+     * Método público implementado de la clase Shape. Este método escribe todos
+     * los datos del cono en un archivo que nosotros designamos.
+     *
+     * @param out Valor tipo PrintWriter. Archivo de salida de los datos.
      */
-    public void print(PrintWriter out)
-    {
-        
+    public void print(PrintWriter out) {
+
         out.write("\n Point Data => ");
         out.write("\nPrint Data = x = " + x + " y = " + y);
         out.write("\n\n\n");;
     }
-    
-    
+
 }

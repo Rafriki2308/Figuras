@@ -2,29 +2,33 @@
 package rafaelmartinez.proyectogithub;
 
 /**
- *Clase abstracta que hereda de Formas geometricas y que define a las figuras 
- * geometricas de dos dimensiones, por tanto continen todo lo necesario que las 
+ *Clase abstracta que hereda de Shape y que define a las figuras 
+ * geométricas de dos dimensiones, por tanto continen todo lo necesario que las 
  * figuras geométricas de dos dimensiones tienen que implementar. 
  * @author Rafael Martinez
  */
 
 
-abstract  class TwoDimensionalShape extends Shape{
+public abstract  class TwoDimensionalShape extends Shape{
     
   
-    /**Metodo abstracto que las las formas geometricas inferiores deben de 
+    /**Método abstracto que las las formas geométricas inferiores deben de 
     * de implementar y sobreescribir que devolvera un valor double 
     * que se correspondesponderá con el calculo del perímetro de la figura 
-    * geometrica cuando se implmente. 
+    * geométrica cuando se implmente. 
+    * @return Valor que se devuelve dependera de la implementación de las clases
+    * hijas
     */
     
    abstract public double getPerimeter();
    
     
-   /**Metodo abstracto que las las formas geometricas inferiores deben de 
-    * de implementar y sobreescribir que devolvera un valor double 
+   /**Método abstracto que las las formas geométricas inferiores deben de 
+    * de implementar y sobreescribir que devolverá un valor double 
     * que se correspondesponderá con el calculo del área de la figura 
     * geométrica cuando se implmente. 
+    * @return Valor que se devuelve dependerá de la implementación de las clases
+    * hijas
     */
    abstract public double getArea();
    

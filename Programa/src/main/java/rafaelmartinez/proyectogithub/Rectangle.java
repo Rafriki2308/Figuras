@@ -7,11 +7,11 @@ import java.io.PrintWriter;
  *Clase que construye la figura geométrica rectángulo. Contiene todo lo 
  *necesario para construir dicho rectángulo.
  * 
- * @author Rafel Martinez
+ * @author Rafel Martínez
  */
-class Rectangle  extends TwoDimensionalShape{
+public class Rectangle  extends TwoDimensionalShape{
 
-     // Declaracion de atributos privados altura y longitud, ambos tipo double. 
+     // Declaración de atributos privados altura y longitud, ambos tipo double. 
     
      private double length;  
      private double width;   
@@ -61,7 +61,7 @@ class Rectangle  extends TwoDimensionalShape{
      * Método público que toma un valor tipo double y establece el valor del 
      * atributo longitud, pues este es privado.
      *
-     * @return Toma un valor tipo double y lo asigna al atributo lenght.
+     * @param length Toma un valor tipo double y lo asigna al atributo lenght.
      */
     public void setHeight(double length) 
     {
@@ -87,7 +87,7 @@ class Rectangle  extends TwoDimensionalShape{
      * Método público que toma un valor tipo double y establece el valor del 
      * atributo longitud, pues este es privado.
      *
-     * @return Toma un valor tipo double y lo asigna al atributo lenght.
+     * @param width Toma un valor tipo double y lo asigna al atributo lenght.
      */
     public void setWidth(double width) 
     {

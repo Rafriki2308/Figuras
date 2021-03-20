@@ -8,22 +8,22 @@ package rafaelmartinez.proyectogithub;
 import java.io.PrintWriter;
 
 /**
- * Clase que construye la figura geométrica cilindro. Contiene todo lo necesario
- * para construir dicho cilindro.
+ * Clase que construye la figura geométrica esfera. Contiene todo lo necesario
+ * para construir dicha esfera.
  *
- * @author Rafel Martinez
+ * @author Rafel Martínez
  */
 public class Sphere extends ThreeDimensionalShape {
 
-    //Declaracion de variable privada tipo double se corresponden con el 
+    //Declaración de variable privada tipo double se corresponden con el 
     //el radio de la figura.
     double radius;
 
     /**
-     * Constructor completo, que generará una esfera. Como dato toma un dato de
-     * tipo double que corresponden al radio de la de la figura.
+     * Constructor completo, que generará una esfera. Como valor toma un parámetro 
+     * de tipo double que corresponden al radio de la de la figura.
      *
-     * @param radius Dato tipo double que correspondera al radio de la figura.
+     * @param radius Valor tipo double que correspondera al radio de la figura.
      */
     public Sphere(double radius) {
         this.radius = radius;
@@ -33,7 +33,7 @@ public class Sphere extends ThreeDimensionalShape {
      * Constructor que toma una esfera y la duplica. Genera una esfera nueva
      * clonando los datos de la esfera que le facilitamos.
      *
-     * @param con Objeto tipo esfera de la que obtenemos el atributos a clonar.
+     * @param sp Objeto tipo esfera de la que obtenemos el atributos a clonar.
      */
     public Sphere(Sphere sp) {
         this.radius = sp.radius;

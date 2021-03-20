@@ -9,18 +9,18 @@ package rafaelmartinez.proyectogithub;
 import java.io.PrintWriter;
 
 /**
- *Clase Abstracta que definen a todo tipo de figuras geometricas. No se puede
+ *Clase Abstracta que definen a todo tipo de figuras geométricas. No se puede
  * instanciar.
- * @author Rafael Martinez
+ * @author Rafael Martínez
  */
-abstract class Shape {
+public abstract class Shape {
     
   
     /**
-     * Metodo que heredaran las figuras geometricas, donde toma un archivo
+     * Metodo que heredaran las figuras geométricas, donde toma un archivo
      * externo para poder dar las salidas del programa en dicho archivo.
      * 
-     * @param out Archivo externo donde escribir los resultados
+     * @param out Archivo externo donde escribir los resultados.
      */
     
     public void print(PrintWriter out) {

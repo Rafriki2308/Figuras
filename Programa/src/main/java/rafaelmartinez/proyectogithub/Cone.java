@@ -11,22 +11,22 @@ import java.io.PrintWriter;
  * Clase que construye la figura geométrica Cono. Contiene todo lo necesario
  * para construir dicho Cono.
  *
- * @author Rafel Martinez
+ * @author Rafel Martínez
  */
-class Cone extends ThreeDimensionalShape {
+public class Cone extends ThreeDimensionalShape {
 
-    //Declaracion de variables privadas tipo double se corresponde
+    //Declaración de variables privadas tipo double se corresponde
     //con el radio de la base y la altura del cono.
     private double radius;
     private double height;
 
     /**
-     * Constructor completo, que generará un cono. Como datos toma dos datos de
-     * tipo double que corresponden al radio de la base y a la altura de dicho
-     * cono.
+     * Constructor completo, que generara un cono. Como datos toma dos valores
+     * de tipo double que corresponden al radio de la base y a la altura de
+     * dicho cono.
      *
-     * @param radius Valor tipo double que sera asignado al atributo radius.
-     * @param height Valor tipo double que sera asgingado al atributo altura.
+     * @param radius Valor tipo double que será asignado al atributo radius.
+     * @param height Valor tipo double que será asgingado al atributo altura.
      */
     public Cone(double radius, double height) {
         this.radius = radius;
@@ -35,7 +35,7 @@ class Cone extends ThreeDimensionalShape {
 
     /**
      * Constructor que toma un cono y lo duplica. Genera un cono nuevo clonando
-     * los datos del cono que le facilitamos.
+     * los valores del cono que le facilitamos.
      *
      * @param con Objeto tipo cono del que obtenemos los atributos a clonar.
      */
@@ -79,14 +79,14 @@ class Cone extends ThreeDimensionalShape {
      * Método público que toma un valor tipo double y establece el valor del
      * atributo altura, pues este es privado.
      *
-     * @return Toma un valor tipo double y lo asigna al atributo height.
+     * @param height Toma un valor tipo double y lo asigna al atributo height.
      */
     public void setHeight(double height) {
         this.height = height;
     }
 
     /**
-     * Método público implementado de la clase ThreeDimensionalShape. Este
+     * Metodo público implementado de la clase ThreeDimensionalShape. Este
      * método calcula y devuelve el valor de la superficie del cono.
      *
      * @return Valor tipo double que se corresponde con el valor de la

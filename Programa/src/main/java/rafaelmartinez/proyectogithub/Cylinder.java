@@ -11,21 +11,21 @@ import java.io.PrintWriter;
  * Clase que construye la figura geométrica cilindro. Contiene todo lo necesario
  * para construir dicho cilindro.
  *
- * @author Rafel Martinez
+ * @author Rafel Martínez
  */
-class Cylinder extends ThreeDimensionalShape {
+public class Cylinder extends ThreeDimensionalShape {
 
-    //Declaracion de variables privadas tipo double se corresponden con la 
+    //Declaración de variables privadas tipo double se corresponden con la 
     //altura del cilindro y con el radio de la base.
     double radius, height;
 
     /**
-     * Constructor completo, que generará un cilindro. Como datos toma un dato
+     * Constructor completo, que generará un cilindro. Como datos toma un valor
      * de tipo double que corresponden a la altura del cilindro y al radio de la
      * base.
      *
-     * @param radius Dato tipo double que correspondera al radio de la base.
-     * @param height Dato tipo double que correspondera a la altura.
+     * @param radius Valor tipo double que corresponderá al radio de la base.
+     * @param height Valor tipo double que corresponderá a la altura.
      */
     public Cylinder(double radius, double height) {
         this.radius = radius;
@@ -34,9 +34,9 @@ class Cylinder extends ThreeDimensionalShape {
 
     /**
      * Constructor que toma un cilindro y lo duplica. Genera un cilindro nuevo
-     * clonando los datos del cilindro que le facilitamos.
+     * clonando los valores del cilindro que le facilitamos.
      *
-     * @param con Objeto tipo cilindro del que obtenemos los atributos a clonar.
+     * @param cyl Objeto tipo cilindro del que obtenemos los atributos a clonar.
      */
     public Cylinder(Cylinder cyl) {
         this.radius = cyl.radius;
@@ -78,7 +78,7 @@ class Cylinder extends ThreeDimensionalShape {
      * Método público que toma un valor tipo double y establece el valor del
      * atributo altura, pues este es privado.
      *
-     * @return Toma un valor tipo double y lo asigna al atributo height.
+     * @param height Toma un valor tipo double y lo asigna al atributo height.
      */
     public void setHeight(double height) {
         this.height = height;

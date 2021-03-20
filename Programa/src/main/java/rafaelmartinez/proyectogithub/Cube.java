@@ -11,16 +11,16 @@ import java.io.PrintWriter;
  * Clase que construye la figura geométrica Cubo. Contiene todo lo necesario
  * para construir dicho Cubo.
  *
- * @author Rafel Martinez
+ * @author Rafel Martínez
  */
-class Cube extends ThreeDimensionalShape {
-    //Declaracion de variable privada tipo double se corresponde la longitud
+public class Cube extends ThreeDimensionalShape {
+    //Declaración de variable privada tipo double se corresponde la longitud
     //del lado del cubo.
 
     double length;
 
     /**
-     * Constructor completo, que generará un cono. Como datos toma un datos de
+     * Constructor completo, que generará un cono. Como valores toma un datos de
      * tipo double que corresponden a la longitud del lado del cubo.
      *
      * @param length Valor de tipo double que se coresponderá con la longitud
@@ -34,7 +34,7 @@ class Cube extends ThreeDimensionalShape {
      * Constructor que toma un cubo y lo duplica. Genera un cubo nuevo clonando
      * los datos del cubo que le facilitamos.
      *
-     * @param con Objeto tipo cubo del que obtenemos los atributos a clonar.
+     * @param cube Objeto tipo cubo del que obtenemos los atributos a clonar.
      */
     public Cube(Cube cube) {
         this.length = cube.length;
@@ -54,7 +54,7 @@ class Cube extends ThreeDimensionalShape {
      * Método público que toma un valor tipo double y establece el valor del
      * atributo longitud de lado, pues este es privado.
      *
-     * @return Toma un valor tipo double y lo asigna al atributo length.
+     * @param length Toma un valor tipo double y lo asigna al atributo length.
      */
     public void setSideLength(double length) {
         this.length = length;
